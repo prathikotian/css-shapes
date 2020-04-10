@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Ubuntu, Roboto, Arial, sans-serif;
+  margin: 0;
+  /* background: darkorange; */
+  background: #ffaf87;
+}
+
+.header {
+  background: center/cover border-box url("img/mehdi-sepehri-unsplash.jpg") no-repeat transparent;
+  height: 100vh;
+}
+
+.mehdi {
+  background-color: #bbbaba;
+  color: white;
+  text-decoration: none;
+  padding: 4px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.mehdi:hover,
+.mehdi:focus {
+  background: black;
+}
+
+.mehdi span {
+  display: inline-block;
+  padding: 2px 3px;
+}
+
+.mehdi svg {
+  height: 12px;
+  width: auto;
+  position: relative;
+  vertical-align: middle;
+  top: -2px;
+  fill: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+
+
+
+.circle {
+  shape-outside: circle();
+} */
+
+/* .fifty { */
+  /* shape-outside: circle(50%); */
+  /* shape-outside: polygon(0 0, 10% 10%, 50% 20%, 150% 100%, 100% 80%, 50% 60%); */
+  /* shape-outside: polygon(0px 57px, 75.51% 3.98%, 101.72% 41.31%, 95.25% 67.59%, 76.72% 90.19%, 41.81% 97.5%);
+  shape-margin: 20px;
+}
+
+.para {
+  writing-mode: sideways-lr;
+} */

@@ -1,3 +1,5 @@
+/* General Styles */
+
 * {
   box-sizing: border-box;
 }
@@ -5,13 +7,15 @@
 body {
   font-family: Ubuntu, Roboto, Arial, sans-serif;
   margin: 0;
-  background: #ffaf87;
+  background: #152D47;
 }
 
 .header {
   background: right/cover border-box url("img/mehdi-sepehri-unsplash.jpg") no-repeat transparent;
   height: 100vh;
 }
+
+/* Unspash Styles */
 
 .unsplash {
   color: black;
@@ -55,8 +59,15 @@ body {
   fill: white;
 }
 
+.bg {
+  background: aliceblue;
+}
+
+/* Section Shapes Styles */
+
 .shapes {
   margin: 5vmin;
+  color: #FFCB70;
 }
 
 .shapes h1 {

@@ -1,3 +1,14 @@
+/* =========================Table of Contents===========================
+        1. General Styles
+        2. Unsplash Styles
+        3. Section Circle Styles
+        4. Section Ellipse Styles
+   =========================Table of Contents=========================== */
+
+@import url('https://fonts.googleapis.com/css?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lexend+Giga&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+
 /* General Styles */
 
 * {
@@ -7,24 +18,63 @@
 body {
   font-family: Ubuntu, Roboto, Arial, sans-serif;
   margin: 0;
-  background: #152D47;
 }
 
-.header {
-  background: right/cover border-box url("assets/img/mehdi-sepehri-unsplash.jpg") no-repeat transparent;
+.hero {
+  background: right/cover border-box url("img/mehdi-sepehri-unsplash.jpg") no-repeat transparent;
   height: 100vh;
 }
 
-/* Unspash Styles */
+section {
+  padding: 5vw 20vw;
+  letter-spacing: 1px;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 10vmin;
+  margin: 1em auto;
+  font-family: "Lexend Giga", Ubuntu, Roboto, Arial, sans-serif;
+}
+
+h1:not(#heading) span {
+  font-family: Arizonia, Ubuntu;
+}
+
+p {
+  text-align: justify;
+}
+
+#heading {
+  margin: .5em 1em;
+  color: #f9423a;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#heading span {
+  font-family: 'Fredericka the Great', 'Lexend Giga', Ubuntu, Roboto, Arial, sans-serif;
+  font-weight: lighter;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+/* Unsplash Styles */
 
 .unsplash {
   color: black;
+  background: white;
   text-decoration: none;
   padding: 4px 6px;
   font-size: 12px;
   font-weight: bold;
   line-height: 1.2;
   border-radius: 3px;
+  letter-spacing: initial;
 }
 
 .top {
@@ -59,42 +109,74 @@ body {
   fill: white;
 }
 
-.bg {
-  background: aliceblue;
+
+/* Section Circle Styles */
+
+.circle {
+  color: #741e1e;
+  background: #DDE3E3;
 }
 
-/* Section Shapes Styles */
-
-.shapes {
-  margin: 5vmin;
-  color: #FFCB70;
+.circle h1:hover,
+.circle h1:focus {
+  color: rgb(217, 132, 132);
 }
 
-.shapes h1 {
-  text-align: center;
-  font-size: 10vmin;
-  margin: 1em 0;
-}
-
-img {
-  max-width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  margin-right: 2em;
-  margin-bottom: 1em;
+.circle img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside: circle();
 }
 
 img:nth-of-type(odd) {
   float: left;
-  shape-outside: circle(50% at 113px 103px);
 }
 
 img:nth-of-type(even) {
   float: right;
-  shape-outside: circle(50% at 136px 101px);
-  margin-left: 36px;
 }
 
-p {
-  text-align: justify;
+/* Section Ellipse Styles */
+
+.ellipse {
+  color: #BF1744;
+  background: #F2D0D9;
+}
+
+.ellipse img {
+  width: 20vw;
+  height: 50%;
+  float: left;
+  shape-outside: ellipse();
+  clip-path: ellipse();
+  margin: 3vw;
+}
+
+.ellipse h1:hover,
+.ellipse h1:focus {
+  color: rgb(232, 181, 232);
+}
+
+
+/* Section Polygon Styles */
+
+.polygon {
+  color: #5E8E2B;
+  background: #EEF26D;
+}
+
+.polygon img {
+  width: 30vw;
+  height: 30%;
+  float: right;
+  shape-outside: polygon(nonzero, 91.8% 22.43%, 84.69% 21.71%, 68.24% 34.78%, 57.34% 32.12%, 45.36% 34.65%, 26.51% 32.21%, 25.93% 42.94%, 38.21% 46.11%, 45.71% 56.6%, 53.91% 58.78%, 50.33% 66.58%, 38.95% 62.68%, 36.67% 67.56%, 27.57% 74.39%, 25.12% 82.2%, 10.17% 80.25%, 10.82% 86.34%, 20.57% 88.78%, 23.5% 94.14%, 28.7% 96.34%, 28.37% 100.00%, 100% 100%, 100% 31.82%);
+  clip-path: polygon(nonzero, 91.8% 22.43%, 84.69% 21.71%, 68.24% 34.78%, 57.34% 32.12%, 45.36% 34.65%, 26.51% 32.21%, 25.93% 42.94%, 38.21% 46.11%, 45.71% 56.6%, 53.91% 58.78%, 50.33% 66.58%, 38.95% 62.68%, 36.67% 67.56%, 27.57% 74.39%, 25.12% 82.2%, 10.17% 80.25%, 10.82% 86.34%, 20.57% 88.78%, 23.5% 94.14%, 28.7% 96.34%, 28.37% 100.00%, 100% 100%, 100% 31.82%);
+  margin: 1rem;
+}
+
+.polygon h1:hover,
+.polygon h1:focus {
+  color: rgb(151, 191, 4);
 }

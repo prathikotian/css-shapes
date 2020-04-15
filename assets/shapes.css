@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-  background: right/cover border-box url("img/mehdi-sepehri-unsplash.jpg") no-repeat transparent;
+  background: right/cover border-box url("assets/img/mehdi-sepehri-unsplash.jpg") no-repeat transparent;
   height: 100vh;
 }
 

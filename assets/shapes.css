@@ -109,6 +109,11 @@ p {
   fill: white;
 }
 
+@media (max-width: 480px) {
+        .unsplash {
+                font-size: 9px;
+        }
+}
 
 /* Section Circle Styles */
 
